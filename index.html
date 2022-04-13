@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>FOR YOU❤️🌎</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="flogin.css">
+   <style>
+     @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Gideon+Roman&family=Great+Vibes&family=Indie+Flower&family=Irish+Grover&family=Permanent+Marker&family=Poppins:ital,wght@0,100;1,400&family=Roboto+Serif:wght@100&family=Sacramento&family=Shippori+Antique+B1&display=swap');
+     body{
+      font-family: 'Caveat', cursive;
+     }
+.logincontainer{
+  font-size: x-large;
+}
+h1{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 60px;
+  color: bisque;
+  font-weight: bolder;
+}
+h4{
+  text-align: justify;
+  padding: 2.5rem;
+  padding-top: 1px;
+  font-weight: 300;
+  font-size: 25px;
+
+}
+#inputPassword1{
+  width: 20rem;
+  display:flex;
+  justify-content: center;
+  margin-left: 12%;
+ 
+}
+
+   </style>
+</head>
+
+<body>
+
+
+    <div class="heart">
+        <div class="wave_container">
+            <div class="wave_1"></div>
+            <div class="wave_2"></div>
+            <div class="wave_3"></div>
+            <div class="wave_4"></div>
+            <div class="wave_5"></div>
+            <div class="wave_6"></div>
+            <div class="wave_7"></div>
+            <div class="wave_8"></div>
+            <div class="wave_9"></div>
+        </div>
+    </div>
+    <div class="logincontainer">
+      <h1>Happiest Birthday BUSHRA KHAN</h1>
+      <br>
+      <h4>Hey Bushra, if you want to enter this world then please enter the password below and get ready for the surprise 
+      </h4>
+      
+      <form class="form" onsubmit="return validationForm()" action="inside.html">
+       
+        <div class="form-group  mb-2">
+          <input type="text" class="form-control" id="inputPassword1" placeholder="your name is the password ☺">
+        </div>
+        <br>
+       <center><button type="submit" id="button1" class="btn btn-danger mb-2">Confirm identity</button></center> 
+      </form>
+    </div>
+    <script>
+function validationForm(){
+  let inputText = document.getElementById("inputPassword1").value;
+  inputText= inputText.toLowerCase();
+  let password = "bushra khan";
+  // alert(typeof(inputText));
+ 
+  
+
+ 
+  if(inputText!=password)
+  {
+    alert("enter the correct password");
+    return false;
+    
+  }
+ 
+}
+// document.getElementById("button1").onclick = function(){
+//   let pathName ="inside.html";
+//   window.location.href = pathName; 
+// }
+    </script>
+</body>
+
+</html>
